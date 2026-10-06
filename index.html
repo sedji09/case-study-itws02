@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="logo.png">
+      <!--=============== ICONS ===============-->
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_bag" />
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- --------- UNICONS ---------- -->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+      <!-- Linking SwiperJS CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="styles.css">
+
+      <title>Our best choice</title>
+   </head>
+   <body>
+      <header>
+      <!--=============== HEADER ===============-->
+      <nav id="header">
+         <div class="nav-logo">
+             <img src="logo.png" alt="logo" style="height: 40px;">
+             <p class="nav-name">Our best coffee</p>  
+         </div>
+         <div class="nav-menu" id="myNavMenu">
+             <ul class="nav_menu_list">
+                 <li class="nav_list">
+                     <a href="#home" class="nav-link active-link">Home</a>
+                     <div class="circle"></div>
+                 </li>
+                 <li class="nav_list">
+                     <a href="about.html" class="nav-link">About Us</a>
+                     <div class="circle"></div>
+                 </li>
+                 <li class="nav_list">
+                     <a href="portfolio.html" class="nav-link">Top Picks</a>
+                     <div class="circle"></div>
+                 </li>
+                 <li class="nav_list">
+                     <a href="contact.html" class="nav-link">Contact Us</a>
+                     <div class="circle"></div>
+                 </li>
+             </ul>
+         </div>
+         <div class="log-site-btn">
+             <div class="favorite">
+                <i class="fas fa-heart favorite-icon" id="favorite-icon"></i>
+                <span id="favorite-count">0</span> <!-- Display count of favorite items -->
+             </div>
+          </div>
+          <div class="nav-menu-btn">
+            <i class="fas fa-bars" id="nav-bars"></i>
+
+         </div>
+       </nav>
+      </header>
+      <main>
+         <!-------Home Content-------->
+         <section class="home-container" id="home">
+            <div class="home-content">
+               <div class="featured-name">
+                  <h2>Our Best Coffee <span class="typedText"></span></h2>
+               </div>
+               <div class="featured-text-info">
+                  <h4>Let's take a break with our recommended special coffee!</h4>
+                   <p>Explore our recommended coffee selections, each crafted to highlight unique flavors and experiences. 
+                     From bold and rich single origins to smooth, nutty blends, and from sweety and salty to dark, chocolatey brews, 
+                     we offer a journey through the diverse world of coffee. Perfect for adventurous palates or those seeking their 
+                     next favorite cup!
+                </p>
+               </div>
+                <div class="menu-button">
+                  <a href="#recommened-items" class="btn">
+                     <span>Explore Now</span>
+                  </a>
+                  <a href="contact.html" class="btn">
+                     <span>Contact Us</span>
+                 </a>
+                </div>
+            </div>
+            <!----------Home Image------------->
+            <img src="coffee_img/home_img.png" alt="" class="home-img">
+         </section>
+
+         <!----------Coffee Reccomended Content------------------>
+         <section class="recommended-container" id="recommened-items">
+            <div class="recommended-content">
+               <div class="listcoffee">
+                  <h1 class="underline">Recommended Coffees</h1>
+                  <div class="container swiper">
+                     <div class="slider-wrapper">
+                        <div class="card-list swiper-wrapper">
+                           <div class="card-item swiper-slide">
+                              <a href="#starbucks">
+                                 <img src="logo_coffee_img/starbucks_logo.png" alt="User Image" class="user-image">
+                                 <h2 class="user-name">Starbucks</h2>
+                              </a>
+                           </div>
+                           <div class="card-item swiper-slide">
+                              <a href="#d&d">
+                                 <img src="logo_coffee_img/dunkin_donuts_logo.png" alt="User Image" class="user-image">
+                                 <h2 class="user-name">Dunkin' Donuts</h2>
+                              </a>
+                           </div>
+                           <div class="card-item swiper-slide">
+                              <a href="#j.co">
+                                 <img src="logo_coffee_img/j.co_logo.png" alt="User Image" class="user-image">
+                                 <h2 class="user-name">J.CO</h2>
+                              </a>
+                           </div>
+                           <div class="card-item swiper-slide">
+                              <a href="#coffee-project">
+                                 <img src="logo_coffee_img/coffee_project_logo.png" alt="User Image" class="user-image">
+                              <h2 class="user-name">Coffee Project</h2>
+                              </a>
+                           </div>
+                           <div class="card-item swiper-slide">
+                              <a href="#bo's-coffee">
+                                 <img src="logo_coffee_img/bo_s_coffee_logo.png" alt="User Image" class="user-image">
+                              <h2 class="user-name">Bo's Coffee</h2>
+                              </a>
+                           </div>
+                           
+                           <div class="card-item swiper-slide">
+                              <a href="#bfc">
+                                 <img src="logo_coffee_img/bfc_logo.jpg" alt="User Image" class="user-image">
+                                 <h2 class="user-name">But First Coffee</h2>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="category" id="starbucks">
+                  <h1 class="coffee-brand">Starbucks</h1>
+                  <div class="menu-container">
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                              <h2>1</h2>
+                              <h3>Ice White Mocha Americano with splash of Brevey and no water</h3>
+                              <div class="item-icons">
+                                 <button class="add-to-favorites-button">Add to Favorites</button>
+                                 <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                              </div>
+                              <p class="description" style="display: none;">
+                                 The sweetness of the white chocolate mocha sauce blends smoothly with the bold espresso, while the splash of breve 
+                                 (steamed half-and-half) adds a velvety texture. It’s sweet, indulgent, and has a slight coffee kick without being overly strong.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/sb top pick.png">
+                        </div>
+                     </div>
+            
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                              <h2>2</h2>
+                              <h3>Iced Butter Cream Latte</h3>
+                              <div class="item-icons">
+                                 <button class="add-to-favorites-button">Add to Favorites</button>
+                                 <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                              </div>
+                              <p class="description" style="display: none;">
+                                 Velvety blend of buttery sweetness with smooth espresso, creating a creamy and indulgent coffee experience.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/sb sec pick (1).png">
+                           
+                        </div>
+                     </div>
+            
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                              <h2>3</h2>
+                              <h3>Iced Hazelnut Mocha Macchiato with Breve Milk and Caramel Dizzle</h3>
+                              <div class="item-icons">
+                                 <button class="add-to-favorites-button">Add to Favorites</button>
+                                 <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                              </div>
+                              <p class="description" style="display: none;">
+                                 It is a creamy, nutty, and chocolatey indulgence, with rich sweetness and bold espresso.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/sb third pick.png" alt="2 Dozen Donuts">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                              <h2>4</h2>
+                              <h3>Iced Salted Caramel</h3>
+                              <div class="item-icons">
+                                 <button class="add-to-favorites-button">Add to Favorites</button>
+                                 <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                              </div>
+                              <p class="description" style="display: none;">
+                                 A delightful balance of rich, buttery caramel sweetness with a hint of saltiness, creating a smooth 
+                                 and indulgent flavor experience.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/sb fourth pick.png" alt="J.Pops Donuts">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                              <h2>5</h2>
+                              <h3>Brown Sugar Soymilk Iced Shaken Espresso with 3 pumps of White Mocha</h3>
+                              <div class="item-icons">
+                                 <button class="add-to-favorites-button">Add to Favorites</button>
+                                 <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                             </div>
+                              <p class="description" style="display: none;">Delivers a creamy, sweet blend of rich espresso and velvety caramel, 
+                                 enhanced by a subtle warmth from the brown sugar, creating a luxurious and refreshing treat.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/sb five pick.png" alt="J.Pops Donuts">
+                        </div>
+                     </div><div class="menu-item menu-item1">
+                        <div class="item-info">
+                              <h2>6</h2>
+                              <h3>Iced White Mocha Caramel Dizzle</h3>
+                              <div class="item-icons">
+                                 <button class="add-to-favorites-button">Add to Favorites</button>
+                                 <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                              </div>
+                              <p class="description" style="display: none;">It offers a rich, creamy sweetness with notes 
+                                 of velvety white chocolate, balanced by a hint of espresso and a delightful caramel finish.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/sb six pick.png" alt="J.Pops Donuts">
+                        </div>
+                     </div><div class="menu-item menu-item2">
+                        <div class="item-info">
+                              <h2>7</h2>
+                              <h3>Iced White Chocolate Mocha with Sweet Cream Foam and extra Caramel Dizzle</h3>
+                              <div class="item-icons">
+                                 <button class="add-to-favorites-button">Add to Favorites</button>
+                                 <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                              </div>
+                              <p class="description" style="display: none;">Offers a rich and creamy blend of sweet white chocolate and 
+                                 espresso, enhanced by the luxurious caramel sweetness that lingers on the palate.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/sb seven.png" alt="J.Pops Donuts">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                              <h2>8</h2>
+                              <h3>Caramel Macchiato Upside Down with Sub Breve and 2/3 pumps of White Mocha</h3>
+                              <div class="item-icons">
+                                 <button class="add-to-favorites-button">Add to Favorites</button> 
+                                 <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                              </div>
+                              <p class="description" style="display: none;">Offers a rich and creamy flavor, blending the sweetness of 
+                                 caramel and white chocolate with the boldness of espresso, all topped with velvety milk foam.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/sb eight.png" alt="J.Pops Donuts">
+                        </div>
+                     </div>  
+                  </div>
+               </div>
+
+               <div class="category" id="d&d">
+                  <h1 class="coffee-brand">Dunkin' Donuts</h1><br>
+                  <div class="menu-container">
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>1</h2>
+                           <h3>Iced Salted Caramel Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">Combines the deep, rich notes of espresso with creamy, 
+                                 frothy milk, infused with luscious, salted caramel syrup that strikes a perfect harmony between sweetness 
+                                 and a subtle, savory saltiness.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/dd top pick (2).png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>2</h2>
+                           <h3>Iced Macchiato</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">A refreshing and bold coffee experience, featuring layers 
+                                 of smooth, rich espresso complemented by creamy milk, creating a delightful contrast between the intense 
+                                 coffee flavor and the light, the sweetened vanilla flavor adds a hint of sweetness.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/dd sec pick (2).png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>3</h2>
+                           <h3>Iced Coffee Hazelnut</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">Delivers a deliciously smooth and nutty flavor profile, 
+                                 with the rich, bold coffee providing a robust base that is perfectly complemented by the sweet and 
+                                 creamy notes of hazelnut syrup. 
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/dd thirid pick.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>4</h2>
+                           <h3>Iced Spanish Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">This delightful combination is served over ice, resulting 
+                                 in a smooth, refreshing beverage that balances the bold coffee notes with a hint of spice and a touch 
+                                 of indulgence.  
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/dd fourth pick (2).png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>5</h2>
+                           <h3>Iced Coffee </h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">Perfectly balanced with just the right amount of sweetness, 
+                                 creating a satisfying blend that is both invigorating and easy to drink; the addition of creamy milk 
+                                 enhances its richness.  
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/dd five.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>6</h2>
+                           <h3>Iced Coffee Almond</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">Delivers a refreshing and nutty experience, 
+                                 featuring smooth, bold coffee blended with creamy almond milk that adds a subtle sweetness 
+                                 and a rich, nutty flavor
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/dd six.png">
+                        </div>
+                     </div> 
+                  </div>
+               </div>
+
+               <div class="category" id="j.co">
+                  <h1 class="coffee-brand">J.CO</h1><br>
+                  <div class="menu-container">
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>1</h2>
+                           <h3>Iced Spanish Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>                           
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">Blends the smooth creaminess of milk with a rich, 
+                                 slightly sweet espresso base, offering a balanced, velvety sweetness with subtle caramel undertones
+                                 that refreshingly lingers on the palate.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/jco top.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>2</h2>
+                           <h3>Iced Americano</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">Has a smooth, bold flavor with a subtle bitterness, 
+                                 balanced by its refreshing coolness, delivering a crisp and clean coffee taste that’s invigorating 
+                                 without being overly intense.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/jco sec.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>3</h2>
+                           <h3>Iced Cinamon Latte </h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">Offers a creamy blend of rich espresso and smooth milk,
+                                 perfectly balanced with a hint of warm, spiced cinnamon and a subtle sweetness.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/jco third.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>4</h2>
+                           <h3>Iced Jcoccino</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">A creamy and indulgent blend of bold espresso and smooth, 
+                                 sweet milk with a refreshing chill, perfectly balanced with hints of caramel and a subtle nutty finish.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/jco four.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>5</h2>
+                           <h3>Iced Brown Sugar Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">A rich, creamy blend of smooth espresso, subtly 
+                                 sweetened with caramel-like brown sugar syrup, balanced by a refreshing cold milk finish, creating 
+                                 a perfect harmony of bold and sweet flavors.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/jco five.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>6</h2>
+                           <h3>Iced Butterscotch Cream Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">A smooth and indulgent taste, blending the rich, 
+                                 buttery sweetness of butterscotch with creamy milk, balanced by a mild coffee undertone, 
+                                 creating a delightful harmony of sweetness and subtle bitterness.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/jco six.png">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="category" id="coffee-project">
+                  <h1 class="coffee-brand">Coffee Project</h1><br>
+                  <div class="menu-container">
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>1</h2>
+                           <h3>Coco Schoco Americano</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">Blends the smooth creaminess of milk with a rich, 
+                                 slightly sweet espresso base, offering a balanced, velvety sweetness with subtle caramel undertones 
+                                 that refreshingly lingers on the palate.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/cp top.png">
+                        </div>
+                     </div>
+
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>2</h2>
+                           <h3>Bold Ca Phe Sua Da</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">A rich, velvety blend of robust Vietnamese coffee with a deep, 
+                                 earthy bitterness balanced by the creamy sweetness of condensed milk, delivering a smooth yet intense 
+                                 flavor that lingers with a satisfying, slightly caramelized aftertaste.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/cp sec.png">
+                        </div>
+                     </div>
+
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>3</h2>
+                           <h3>Iced Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">A smooth blend of rich espresso and creamy milk, 
+                                 perfectly balanced with a subtle sweetness and a refreshing, cool finish, making it a delightful 
+                                 pick-me-up with a velvety texture.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/cp third.png">
+                        </div>
+                     </div>
+
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>4</h2>
+                           <h3>Coco Choco Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">
+                                 A rich and creamy blend of smooth chocolate and velvety coconut milk, creating a delightful 
+                                 balance of sweetness and subtle tropical notes, with a comforting, indulgent finish.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/cp fouth.png">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="category">
+                  <h1 class="coffee-brand" id="bo's-coffee">Bo's Coffee</h1><br>
+                  <div class="menu-container">
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>1</h2>
+                           <h3>Cold White Brew</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">'
+                                 It  is a refreshing blend of rich, cold-brewed coffee paired with creamy milk, 
+                                 delivering a smooth and velvety flavor. Perfectly chilled, it’s a delightful pick-me-up f
+                                 or any time of the day.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bo_s_cold_white_brew.png">
+                        </div>
+                     </div>
+
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>2</h2>
+                           <h3>Iced Creamy Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">
+                                 A refreshing blend of rich espresso, velvety milk, and a hint of sweetness, 
+                                 poured over ice for the perfect balance of bold and creamy indulgence.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bo_s_iced_creamy_latte.png">
+                        </div>
+                     </div>
+
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>3</h2>
+                           <h3>Froccino Cookies N' Cream</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">
+                                 It is a delightful treat that combines creamy, smooth ice cream with crunchy bits of chocolate cookies, 
+                                 making every sip have a satisfying experience. Ideal for those who crave a sweet, cool dessert with a bit of crunch!
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bo_s_froccino_cookiesn_cream.png">
+                        </div>
+                     </div>
+
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>4</h2>
+                           <h3>Froccino Caramelo</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">
+                                 It is a deliciously creamy coffee beverage, blending rich espresso with smooth caramel syrup, 
+                                 topped with whipped cream for an indulgent treat. Perfectly balanced with sweet and bold flavors, 
+                                 it's a refreshing and satisfying drink for coffee lovers and caramel enthusiasts alike.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bo_s_froccino_caramelo.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>5</h2>
+                           <h3>Froccino Mocha</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">
+                                 It is a delightful, chilled coffee beverage that combines rich espresso with creamy chocolate 
+                                 and a touch of whipped cream. It offers a smooth, indulgent flavor with a perfect balance of
+                                  coffee and cocoa, making it a refreshing treat for any mocha lover.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bo_s_froccino_mocha.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>6</h2>
+                           <h3>Froccino White Chocolate Mocha</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">
+                                 It is a creamy, indulgent blend of rich white chocolate and smooth coffee, topped with whipped cream 
+                                 for a sweet and refreshing treat. Perfect for those who crave a luxurious twist on the classic mocha!
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bo_s_froccino_white_chocolate_mocha.png">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="category">
+                  <h1 class="coffee-brand" id="bfc">But First Coffee</h1><br>
+                  <div class="menu-container">
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>1</h2>
+                           <h3>White Chocolate Mocha</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">
+                                 It is a rich and creamy coffee drink made with espresso, steamed milk, and a sweet white chocolate sauce, 
+                                 topped with a swirl of whipped cream. It’s a luxurious blend of bold coffee flavor and smooth, sweet chocolate.
+                                 Perfect for those who love a sweeter, indulgent twist on the classic mocha.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bfc_white_chocolate_mocha.png">
+                        </div>
+                     </div>
+
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>2</h2>
+                           <h3>Cafe Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">
+                                 A rich, velvety blend of robust Vietnamese coffee with a deep, earthy bitterness balanced 
+                                 by the creamy sweetness of condensed milk, delivering a smooth yet intense flavor that lingers 
+                                 with a satisfying, slightly caramelized aftertaste.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bfc_cafe_latte.png">
+                        </div>
+                     </div>
+
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>3</h2>
+                           <h3>Caramel Macchiato</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i>
+                           </div>
+                              <p class="description" style="display: none;">
+                                 A smooth blend of rich espresso and creamy milk, perfectly balanced with a subtle sweetness 
+                                 and a refreshing, cool finish, making it a delightful pick-me-up with a velvety texture.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bfc_caramel_macchiato.png">
+                        </div>
+                     </div>
+
+                     <div class="menu-item menu-item2">
+                        <div class="item-info">
+                           <h2>4</h2>
+                           <h3>Iced Milky Caramel</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">
+                                 It is a refreshing, sweet beverage that combines the richness of smooth caramel with creamy 
+                                 milk, served over ice for a cool and indulgent treat. Perfect for those who crave a sweet, 
+                                 creamy coffee alternative with a delightful caramel twist.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bfc_iced_milky_caramel.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>5</h2>
+                           <h3>Salted Caramel Latte</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">
+                                 It is a deliciously indulgent coffee drink that combines the rich, smooth flavor of espresso 
+                                 with the sweet, buttery taste of caramel. Topped with a salted caramel, it offers the perfect 
+                                 balance of sweetness and a savory twist, making it a cozy, satisfying treat for any coffee lover.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bfc_salted_caramel_latte.png">
+                        </div>
+                     </div>
+                     <div class="menu-item menu-item1">
+                        <div class="item-info">
+                           <h2>6</h2>
+                           <h3>Iced Brown Sugar Coffee 12OZ</h3>
+                           <div class="item-icons">
+                              <button class="add-to-favorites-button">Add to Favorites</button>
+                              <i class="fas fa-plus-circle overlay-plus-icon"></i> 
+                           </div>
+                              <p class="description" style="display: none;">
+                                 A smooth and refreshing blend of rich brown sugar and bold coffee, served chilled over ice. 
+                                 This sweet and savory drink offers a perfect balance of flavors for a cool, satisfying treat.
+                              </p>
+                        </div>
+                        <div class="item-image">
+                           <img src="coffee_img/bfc_iced_brown_sugar_coffee.png">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div> 
+         </section>
+
+         <!-- Modal for Favorite Items -->
+         <div id="favoriteModal" class="modal">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h2><i class="fas fa-heart" style="color: #e65100; margin-right: 8px;"></i> Your Favorite Items</h2>
+                  <span class="close" title="Close">&times;</span>
+               </div>
+               <div class="modal-body">
+                  <ul id="favorite-list"></ul>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <!------Footer Section-------->
+      <footer class="footer">
+         <section class="top section">
+             <img src="logo.png" class="footer-img"/>
+             <p class="logo-name">Our best choice</p>
+           
+           <div class="links">
+             <div class="links-column">
+               <a href="index.html" class="footer-nav">Home</a>
+               <a href="about.html" class="footer-nav">About us</a>
+               <a href="portfolio.html" class="footer-nav">Portfolio</a>
+               <a href="contact.html" class="footer-nav">Contacts</a>
+             </div>
+             <div class="links-column">
+               <h2 class="footer-socials">Social Media</h2>
+               <p class="follow-us">Follow us on social media to get the latest uploads.</p>
+                 <div class="socials">
+                   <a href="https://www.facebook.com/profile.php?id=61569196025331&mibextid=ZbWKwL" class="social-icons"><i class="fa-brands fa-facebook" ></i></a>
+                   <a href="mailto:ourbestchoice24@gmail.com" class="social-icons"><i class="fa-solid fa-envelope" ></i></a>
+                   <a href="https://www.instagram.com/" class="social-icons"><i class="fa-brands fa-instagram" ></i></a>
+                 </div>
+             </div>
+         </section>
+         <section class="bottom section">
+           <p class="copyright">© 2024 All rights reserved</p>
+           <div class="legal">
+             <a> Contact </a>
+             <a> Terms </a>
+             <a> Privacy </a>
+           </div>
+         </section>
+       </footer>
+
+       <!---------JAVASCRIPT-------------->
+      <!-- ----- TYPING JS Link ----- -->
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <!-- ----- SCROLL REVEAL JS Link----- -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <!-- Linking SwiperJS script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="main.js"></script>
+   </body>
+</html>

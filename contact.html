@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="contacts.css">
+
+    <title>Contact Us</title>
+    <script>
+        function validateForm(event) {
+        event.preventDefault(); 
+
+        const form = event.target;
+        const fname = form.fName.value.trim();
+        const lname = form.lname.value.trim();
+        const email = form.email.value.trim();
+        const subject = form.subject.value.trim();
+        const message = form.message.value.trim();
+
+            if (!fname || !lname) {
+                alert("Please enter both your first and last name");
+                return false;
+            }
+            if (!email) {
+                alert("Please enter your email");
+                return false;
+            }
+            if (!subject) {
+                alert("Please enter subject");
+                return false;
+            }
+
+            if (!subject) {
+                alert("Please enter your message");
+                return false;
+            }
+            if (confirm("Are you sure you want to submit?")) {
+                alert("Successfully Submitted. Thank you for messaging us!");
+                form.submit();
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!--=============== HEADER ===============-->
+        <nav id="header">
+           <div class="nav-logo">
+               <img src="logo.png" alt="logo" style="height: 40px;">
+               <p class="nav-name">Our best coffee</p>
+                <!---Nav Toggle---->
+                
+           </div>
+           <div class="nav-menu" id="myNavMenu">
+               <ul class="nav_menu_list">
+                   <li class="nav_list">
+                       <a href="index.html" class="nav-link">Home</a>
+                   </li>
+                   <li class="nav_list">
+                       <a href="about.html" class="nav-link">About Us</a>
+                   </li>
+                   <li class="nav_list">
+                       <a href="portfolio.html" class="nav-link">Top Picks</a>
+                   </li>
+                   <li class="nav_list">
+                       <a href="contact.html" class="nav-link active-link">Contact Us</a>
+                   </li>
+               </ul>
+           </div>
+           <div class="log-site-btn">
+               <div class="favorite">
+                  <i class="fas fa-heart favorite-icon" id="favorite-icon"></i>
+                  <span id="favorite-count">0</span>
+               </div>
+           </div>
+           <div class="nav-menu-btn">
+              <i class="fas fa-bars" id="nav-bars"></i>
+           </div>
+         </nav>
+    </header>
+    <form action="submit_form.php" method="post" class="contact-container" onsubmit="validateForm(event)">
+        <section class="contacts-content">
+            <div class="contact-form">
+                <legend>Contact Us<legend>
+
+                <div class="input-name container">
+                    <input type="text" class="first-name" name="fname" placeholder="First Name">
+                    <input type="text" class="last-name" name="lname" placeholder="Last Name">
+                </div>
+                <div class="input-email container">
+                    <input type="email" class="email" name="email" placeholder="Email">
+                </div>
+                <div class="input-phone-no container">
+                    <input type="text" class="subject" name="subject" placeholder="Subject">
+                </div>
+                <div class="input-message container">
+                    <textarea name="message" placeholder="How can we help you?" rows="4" cols="10"></textarea>
+                </div>
+                <div class="action-btn container">
+                    <button class="btn btn-submit">Send Message</button>
+                </div>
+                <div class="or-text container">Or contact us on social media</div>
+                <div class="social-contact">
+                    <div class="social container">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61569196025331&mibextid=ZbWKwL"><i class="ri-facebook-circle-fill"></i></a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="mailto:ourbestchoice24@gmail.com"><i class="ri-mail-fill"></i></a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://instagram.com"><i class="ri-instagram-fill"></i></a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+    <p id="response-message"></p>
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="contact-us.js"></script>
+</script>
+</body>
+</html>

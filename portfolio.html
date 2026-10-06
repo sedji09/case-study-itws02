@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png">
+  <title>Top Picks & Coffee Recommendations - Our Best Coffee</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="portfolio.css">
+
+  <!----- SCROLL REVEAL JS Link----- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header>
+        <nav id="header">
+           <div class="nav-logo">
+               <img src="logo.png" alt="logo" style="height: 40px;">
+               <p class="nav-name">Our best coffee</p>
+           </div>
+           <div class="nav-menu" id="myNavMenu">
+               <ul class="nav_menu_list">
+                   <li class="nav_list">
+                       <a href="index.html" class="nav-link">Home</a>
+                       <div class="circle"></div>
+                   </li>
+                   <li class="nav_list">
+                       <a href="about.html" class="nav-link">About Us</a>
+                       <div class="circle"></div>
+                   </li>
+                   <li class="nav_list">
+                       <a href="portfolio.html" class="nav-link active-link">Top Picks</a>
+                       <div class="circle"></div>
+                   </li>
+                   <li class="nav_list">
+                       <a href="contact.html" class="nav-link">Contact Us</a>
+                       <div class="circle"></div>
+                   </li>
+               </ul>
+           </div>
+           <div class="log-site-btn">
+               <div class="favorite">
+                  <i class="fas fa-heart favorite-icon" id="favorite-icon"></i>
+                  <span id="favorite-count">0</span>
+               </div>
+           </div>
+           <div class="nav-menu-btn">
+              <i class="fas fa-bars" id="nav-bars"></i>
+           </div>
+         </nav>
+    </header>
+
+    <div class="picks-page-container">
+        <!-- Hero Section -->
+        <section class="picks-hero">
+            <span class="hero-badge"><i class="ri-sparkling-fill"></i> Curated Coffee Recommendations</span>
+            <h1>Our Top Coffee Picks & Tasting Insights</h1>
+            <p class="hero-subtitle">
+                A handpicked selection of our all-time favorite coffee variations, flavor breakdowns, and honest reviews to help you discover your next go-to brew.
+            </p>
+            
+            <!-- Quick Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Picks</button>
+                <button class="filter-btn" data-filter="sweet">Sweet & Creamy</button>
+                <button class="filter-btn" data-filter="bold">Bold & Strong</button>
+                <button class="filter-btn" data-filter="coldbrew">Cold Brews</button>
+                <button class="filter-btn" data-filter="specialty">Specialty Flavors</button>
+            </div>
+        </section>
+
+        <!-- Top Picks Grid -->
+        <section class="picks-grid-section">
+            <div class="picks-grid">
+                
+                <!-- Pick Card 1 -->
+                <div class="pick-card" data-category="sweet">
+                    <div class="card-badge badge-popular"><i class="ri-fire-fill"></i> Crowd Favorite</div>
+                    <div class="pick-img-box">
+                        <img src="coffee_img/happycup_spanish_latte.png" alt="Highland Spanish Latte">
+                    </div>
+                    <div class="pick-content">
+                        <div class="pick-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-num">4.9 / 5.0</span>
+                        </div>
+                        <h3>Highland Spanish Latte</h3>
+                        <p class="pick-tagline">Rich espresso blended with silky condensed milk & fresh cream.</p>
+                        
+                        <div class="flavor-tags">
+                            <span class="tag">Creamy</span>
+                            <span class="tag">Toffee Sweetness</span>
+                            <span class="tag">Low Bitterness</span>
+                        </div>
+
+                        <div class="meters-container">
+                            <div class="meter-row">
+                                <span>Sweetness</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span></div>
+                            </div>
+                            <div class="meter-row">
+                                <span>Caffeine Kick</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+                            </div>
+                        </div>
+
+                        <div class="curator-verdict">
+                            <strong><i class="ri-chat-quote-fill"></i> Our Verdict:</strong>
+                            <p>"The ultimate comfort coffee. The sweetness never overpowers the bold espresso notes. Best paired with pastry for study breaks!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pick Card 2 -->
+                <div class="pick-card" data-category="sweet specialty">
+                    <div class="card-badge badge-claire"><i class="ri-heart-fill"></i> Claire's Top Pick</div>
+                    <div class="pick-img-box">
+                        <img src="coffee_img/happycup_caramel_macchiato_iced_coffee.png" alt="Iced Velvet Caramel Macchiato">
+                    </div>
+                    <div class="pick-content">
+                        <div class="pick-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-num">4.8 / 5.0</span>
+                        </div>
+                        <h3>Iced Velvet Caramel Macchiato</h3>
+                        <p class="pick-tagline">Layered espresso over vanilla milk with slow-cooked caramel drizzle.</p>
+                        
+                        <div class="flavor-tags">
+                            <span class="tag">Caramel Butter</span>
+                            <span class="tag">Velvety</span>
+                            <span class="tag">Aesthetic</span>
+                        </div>
+
+                        <div class="meters-container">
+                            <div class="meter-row">
+                                <span>Sweetness</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span></div>
+                            </div>
+                            <div class="meter-row">
+                                <span>Caffeine Kick</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+                            </div>
+                        </div>
+
+                        <div class="curator-verdict">
+                            <strong><i class="ri-chat-quote-fill"></i> Claire's Insight:</strong>
+                            <p>"Not only does it look gorgeous in photos, but the rich buttery caramel cascading through iced milk makes every sip feel luxurious."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pick Card 3 -->
+                <div class="pick-card" data-category="bold coldbrew">
+                    <div class="card-badge badge-seigi"><i class="ri-cup-fill"></i> Seigi's Top Pick</div>
+                    <div class="pick-img-box">
+                        <img src="coffee_img/bo_s_cold_white_brew.png" alt="Artisanal Cold White Brew">
+                    </div>
+                    <div class="pick-content">
+                        <div class="pick-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-num">4.9 / 5.0</span>
+                        </div>
+                        <h3>Artisanal Cold White Brew</h3>
+                        <p class="pick-tagline">24-hour slow steeped single-origin roast infused with full-cream milk.</p>
+                        
+                        <div class="flavor-tags">
+                            <span class="tag">Smooth</span>
+                            <span class="tag">Zero Acidity</span>
+                            <span class="tag">Chocolatey</span>
+                        </div>
+
+                        <div class="meters-container">
+                            <div class="meter-row">
+                                <span>Sweetness</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            </div>
+                            <div class="meter-row">
+                                <span>Caffeine Kick</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span></div>
+                            </div>
+                        </div>
+
+                        <div class="curator-verdict">
+                            <strong><i class="ri-chat-quote-fill"></i> Seigi's Insight:</strong>
+                            <p>"The cleanest caffeine boost you can get. Extremely smooth without any acidity or bitterness. Keeps me laser-focused for hours of programming."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pick Card 4 -->
+                <div class="pick-card" data-category="sweet specialty">
+                    <div class="card-badge badge-musttry"><i class="ri-star-smile-fill"></i> Must Try</div>
+                    <div class="pick-img-box">
+                        <img src="coffee_img/bfc_iced_brown_sugar_coffee.png" alt="Iced Brown Sugar Shaken Espresso">
+                    </div>
+                    <div class="pick-content">
+                        <div class="pick-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-num">4.8 / 5.0</span>
+                        </div>
+                        <h3>Iced Brown Sugar Espresso</h3>
+                        <p class="pick-tagline">Shaken espresso with toasted muscovado syrup and subtle cinnamon warmth.</p>
+                        
+                        <div class="flavor-tags">
+                            <span class="tag">Toasted Sugar</span>
+                            <span class="tag">Spiced Warmth</span>
+                            <span class="tag">Bold</span>
+                        </div>
+
+                        <div class="meters-container">
+                            <div class="meter-row">
+                                <span>Sweetness</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+                            </div>
+                            <div class="meter-row">
+                                <span>Caffeine Kick</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span></div>
+                            </div>
+                        </div>
+
+                        <div class="curator-verdict">
+                            <strong><i class="ri-chat-quote-fill"></i> Our Verdict:</strong>
+                            <p>"A refreshing modern classic. The molasses depth of brown sugar enhances the coffee beans instead of just adding plain sweetness."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pick Card 5 -->
+                <div class="pick-card" data-category="specialty sweet">
+                    <div class="card-badge badge-popular"><i class="ri-sparkling-line"></i> Highly Rated</div>
+                    <div class="pick-img-box">
+                        <img src="coffee_img/bfc_salted_caramel_latte.png" alt="Salted Caramel Cream Latte">
+                    </div>
+                    <div class="pick-content">
+                        <div class="pick-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-num">4.7 / 5.0</span>
+                        </div>
+                        <h3>Salted Caramel Cream Latte</h3>
+                        <p class="pick-tagline">Sea-salted caramel infused espresso balanced with velvety micro-foam.</p>
+                        
+                        <div class="flavor-tags">
+                            <span class="tag">Sweet & Salty</span>
+                            <span class="tag">Silky</span>
+                            <span class="tag">Rich Aroma</span>
+                        </div>
+
+                        <div class="meters-container">
+                            <div class="meter-row">
+                                <span>Sweetness</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+                            </div>
+                            <div class="meter-row">
+                                <span>Caffeine Kick</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+                            </div>
+                        </div>
+
+                        <div class="curator-verdict">
+                            <strong><i class="ri-chat-quote-fill"></i> Our Verdict:</strong>
+                            <p>"The pinch of sea salt cuts through the richness, creating an addictive contrast of sweet and savory in every gulp."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pick Card 6 -->
+                <div class="pick-card" data-category="specialty bold">
+                    <div class="card-badge badge-musttry"><i class="ri-plant-fill"></i> Nutty & Rich</div>
+                    <div class="pick-img-box">
+                        <img src="coffee_img/happycup_hazlenut_latte.png" alt="Toasted Hazelnut Latte">
+                    </div>
+                    <div class="pick-content">
+                        <div class="pick-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-num">4.7 / 5.0</span>
+                        </div>
+                        <h3>Toasted Hazelnut Latte</h3>
+                        <p class="pick-tagline">Earthy roasted hazelnuts blended with highland espresso and steamed milk.</p>
+                        
+                        <div class="flavor-tags">
+                            <span class="tag">Nutty</span>
+                            <span class="tag">Aromatic</span>
+                            <span class="tag">Balanced</span>
+                        </div>
+
+                        <div class="meters-container">
+                            <div class="meter-row">
+                                <span>Sweetness</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            </div>
+                            <div class="meter-row">
+                                <span>Caffeine Kick</span>
+                                <div class="meter-dots"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span></div>
+                            </div>
+                        </div>
+
+                        <div class="curator-verdict">
+                            <strong><i class="ri-chat-quote-fill"></i> Our Verdict:</strong>
+                            <p>"Perfect for lovers of nutty, aromatic coffee. It has a cozy, warm aroma that immediately makes study time more relaxing."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 3: Curators' Spotlight -->
+        <section class="curators-spotlight">
+            <h2 class="section-title"><i class="ri-user-star-line"></i> The Curators' Personal Favorites</h2>
+            <div class="spotlight-container">
+                <div class="spotlight-card">
+                    <img src="creator_img1.jpg" alt="Claire" class="curator-avatar">
+                    <div class="spotlight-info">
+                        <span class="curator-role">Claire's Signature Recommendation</span>
+                        <h3>"For Sweet, Refreshing, & Aesthetic Vibes"</h3>
+                        <p>
+                            "If you want something uplifting and aesthetic that tastes as amazing as it looks, go for the <strong>Iced Velvet Caramel Macchiato</strong> or <strong>Spanish Latte</strong>. It's the perfect treat after a long day of classes!"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card">
+                    <img src="creator_img2.png" alt="Seigi" class="curator-avatar">
+                    <div class="spotlight-info">
+                        <span class="curator-role">Seigi's Signature Recommendation</span>
+                        <h3>"For Maximum Focus & Clean Energy"</h3>
+                        <p>
+                            "When you have heavy coding tasks or exams, you need sustained energy without the sugar crash. My number one recommendation is the <strong>Artisanal Cold White Brew</strong>—bold, rich, and ultra-smooth."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: How to Choose Your Coffee Guide -->
+        <section class="guide-section">
+            <h2 class="section-title"><i class="ri-compass-3-line"></i> How to Pick Your Drink Today</h2>
+            <div class="guide-grid">
+                <div class="guide-box">
+                    <i class="ri-flashlight-fill"></i>
+                    <h4>Need Max Energy & Focus?</h4>
+                    <p>Pick: <strong>Cold White Brew</strong> or <strong>Double Shot Espresso</strong> for high caffeine and zero distraction.</p>
+                </div>
+                <div class="guide-box">
+                    <i class="ri-cake-3-fill"></i>
+                    <h4>Craving a Sweet Treat?</h4>
+                    <p>Pick: <strong>Spanish Latte</strong> or <strong>Caramel Macchiato</strong> for smooth caramel sweetness.</p>
+                </div>
+                <div class="guide-box">
+                    <i class="ri-leaf-fill"></i>
+                    <h4>Want Nutty & Aromatic?</h4>
+                    <p>Pick: <strong>Toasted Hazelnut</strong> or <strong>Salted Caramel Latte</strong> for rich complexity.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+<script>
+// Toggle menu for small screen size
+const navMenu = document.querySelector('.nav-menu');
+const navMenuBtn = document.querySelector('.nav-menu-btn');
+
+if (navMenuBtn) {
+  navMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+}
+
+// Filter Tabs Logic
+const filterBtns = document.querySelectorAll('.filter-btn');
+const pickCards = document.querySelectorAll('.pick-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filterValue = btn.getAttribute('data-filter');
+
+    pickCards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+      if (filterValue === 'all' || cardCategory.includes(filterValue)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Scroll Reveal
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof ScrollReveal !== 'undefined') {
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '50px',
+      duration: 1500,
+      reset: false
+    });
+
+    sr.reveal('.picks-hero', { delay: 100 });
+    sr.reveal('.pick-card', { interval: 150 });
+    sr.reveal('.curators-spotlight', { delay: 150 });
+    sr.reveal('.guide-section', { delay: 150 });
+  }
+});
+</script>
+
+</body>
+</html>
